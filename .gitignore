@@ -3,3 +3,4 @@
 python-lambda/package
 terraform/terraform.tfstate*
 *.zip
+go-lambda/bin

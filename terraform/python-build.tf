@@ -1,7 +1,6 @@
 locals {
   python_src            = "python-lambda"
   python_src_dir        = abspath("${path.module}/../${local.python_src}")
-  container_dir         = "/app"
   python_dependencies   = "package"
   python_lambda_zip     = "python-lambda.zip"
   python_lambda_zip_dir = abspath("${local.python_src_dir}/${local.python_lambda_zip}")
