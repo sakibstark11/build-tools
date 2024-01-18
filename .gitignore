@@ -1,0 +1,5 @@
+.DS_Store
+*.terraform*
+python-lambda/package
+terraform/terraform.tfstate*
+*.zip
