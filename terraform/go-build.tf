@@ -2,7 +2,7 @@ locals {
   go_src            = "go-lambda"
   go_src_dir        = abspath("${path.module}/../${local.go_src}")
   go_lambda_zip     = "lambda.zip"
-  go_lambda_zip_dir = abspath("${local.go_src_dir}/${local.go_lambda_zip}")
+  go_lambda_zip_dir = "${local.go_src_dir}/${local.go_lambda_zip}"
   go_bin            = "bin"
 }
 

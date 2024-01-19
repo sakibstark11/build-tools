@@ -26,6 +26,7 @@ resource "aws_lambda_function" "python_lambda" {
   handler          = "index.handler"
   source_code_hash = data.archive_file.python_lambda_zip.output_base64sha256
   runtime          = "python3.12"
+  layers           = [aws_lambda_layer_version.python_lambda_layer.arn]
 }
 
 resource "aws_lambda_function" "go_lambda" {
