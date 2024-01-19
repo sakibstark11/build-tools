@@ -1,6 +1,6 @@
 .DS_Store
 *.terraform*
-python-lambda/package
+python-lambda/layer
 terraform/terraform.tfstate*
 *.zip
 go-lambda/bin
