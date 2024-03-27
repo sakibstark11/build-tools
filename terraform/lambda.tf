@@ -35,5 +35,5 @@ resource "aws_lambda_function" "go_lambda" {
   role             = aws_iam_role.lambda_iam_role.arn
   handler          = "main"
   source_code_hash = data.archive_file.go_lambda_zip.output_base64sha256
-  runtime          = "go1.x"
+  runtime          = "provided.al2"
 }
